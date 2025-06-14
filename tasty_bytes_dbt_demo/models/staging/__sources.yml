@@ -1,9 +1,9 @@
 version: 2
 sources:
-- name: tb_101
+- name: EDW_STAGE
   description: 'Point of Sale source data'
   database: tb_101
-  schema: RAW
+  schema: DEV
   tables:
   - name: COUNTRY
     description: 'Country reference data'
