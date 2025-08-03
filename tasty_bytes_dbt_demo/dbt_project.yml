@@ -21,5 +21,10 @@ models:
   tasty_bytes:
     staging:
       +materialized: view
+      +database: EDW_DEV
+      +schema: BRONZE
     marts:
       +materialized: table
+      +database: EDW_DEV
+      +schema: SILVER
+   

@@ -1,2 +1,2 @@
 SELECT *
-FROM {{ source('tb_101', 'TRUCK') }}
+FROM {{ source('EDW_STAGE', 'TRUCK') }}

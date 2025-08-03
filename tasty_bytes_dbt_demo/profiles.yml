@@ -6,14 +6,14 @@ tasty_bytes:
       account: 'not needed'
       user: 'not needed'
       role: accountadmin
-      database: EDW_DB
-      schema: dev
-      warehouse: DBT_WH
+      database: ANB_APP
+      schema: DEV
+      warehouse: dbt_dev_wh
     prod:
       type: snowflake
       account: 'not needed'
       user: 'not needed'
       role: accountadmin
-      database: EDW_DB
+      database: ANB_APP
       schema: prod
-      warehouse: DBT_WH
+      warehouse: dbt_dev_wh

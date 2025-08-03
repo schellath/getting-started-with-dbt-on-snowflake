@@ -1,2 +1,2 @@
 SELECT *
-FROM {{ source('tb_101', 'ORDER_HEADER') }}
+FROM {{ source('EDW_STAGE', 'ORDER_HEADER') }}

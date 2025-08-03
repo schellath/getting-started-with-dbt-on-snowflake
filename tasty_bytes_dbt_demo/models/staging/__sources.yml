@@ -2,7 +2,7 @@ version: 2
 sources:
 - name: EDW_STAGE
   description: 'Point of Sale source data'
-  database: tb_101
+  database: EDW_STAGE
   schema: DEV
   tables:
   - name: COUNTRY
@@ -136,7 +136,7 @@ sources:
       data_tests:
         - not_null
         - relationships:
-            to: source('tb_101', 'ORDER_HEADER')
+            to: source('EDW_STAGE', 'ORDER_HEADER')
             field: ORDER_ID
     - name: MENU_ITEM_ID
       description: 'Foreign key to menu'
@@ -176,14 +176,14 @@ sources:
       data_tests:
         - not_null
         - relationships:
-            to: source('tb_101', 'TRUCK')
+            to: source('EDW_STAGE', 'TRUCK')
             field: TRUCK_ID
     - name: LOCATION_ID
       description: 'Foreign key to location'
       data_tests:
         - not_null
         - relationships:
-            to: source('tb_101', 'LOCATION')
+            to: source('EDW_STAGE', 'LOCATION')
             field: LOCATION_ID
     - name: CUSTOMER_ID
       description: 'Customer identifier'
@@ -269,7 +269,7 @@ sources:
       description: 'Foreign key to franchise'
       data_tests:
         - relationships:
-            to: source('tb_101', 'FRANCHISE')
+            to: source('EDW_STAGE', 'FRANCHISE')
             field: FRANCHISE_ID
     - name: TRUCK_OPENING_DATE
       description: 'Date truck began operations'

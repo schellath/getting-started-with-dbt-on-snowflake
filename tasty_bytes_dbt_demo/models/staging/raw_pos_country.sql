@@ -1,2 +1,2 @@
 SELECT *
-FROM {{ source('tb_101', 'COUNTRY') }}
+FROM {{ source('EDW_STAGE', 'COUNTRY') }}
